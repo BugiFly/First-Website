@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    max-width: 1080px;
+    margin: auto;
+    background-color: rgba(54, 51, 51,0.5);
+}
+
+/*This section dictates the header and its contents*/
+nav{
+    height: 150px;
+    width: 100%;
+    background: rgba(54, 51, 51,1.0);
+    padding: 15px 15px;
+}
+nav a{
+    color: #fff;
+    font-size: 30px;
+    line-height: 125px;
+    float: left;
+    margin-left: 15px;
+    text-align: left;
+}
+nav img{
+    height: 120px;
+    border: blueviolet solid 2px;
+    border-radius: 15%;
+}
+nav ul{
+    font-size: 25px;
+    line-height: 125px;
+    float: right;
+    margin-right: 15px;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    padding-right: 25px;
+}
+nav ul li a{
+    color: #fff;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: rgb(146, 145, 145);
+    transition: 0.5s;
+}
+a.active{
+    color: blueviolet;
+}
+/*
+this code adds a line below each link in the nav 
+bar that expands over a 0.5s period
+nav ul li::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: blueviolet;
+    display: block;
+    margin: 0px;
+    transform: translateY(-20px); 
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}*/
+.checkbtn{
+    font-size: 25px;
+    color: #fff;
+    line-height: 125px;
+    float: right;
+    margin-right: 15px;
+    text-align: right;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/*This section dictates the intro and its contents*/
+.intro{
+    height: 100vh;
+    width: 100%;
+    background: rgba(54, 51, 51,0.5);
+    padding: 50px 0px;
+}
+.info-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    height: 230px;
+    width: 85%;
+    margin-bottom: 50px;
+    margin-left: 7.5%;
+    background: rgba(54, 51, 51,0.6);
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+.info-box img{
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 2;
+}
+
+.info-text{
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+}
+.info-text h1{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.info-text p{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.info-text a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 5px solid #fff;
+    border-radius: 25px;
+    transition: 0.75s;
+}
+.info-text a:hover{
+    color: rgba(54, 51, 51,0.75);
+    border-color: rgba(54, 51, 51,0.7);
+    background-color: #fff;
+}
+
+/*About Page Styling*/
+.resume{
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(54, 51, 51,0.5);
+    padding: 50px 0px;
+}
+.resume-box{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.resume-bullets{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+}
+
+.resume-bullets::after{
+    content: " ";
+    display: block;
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background: black;
+    margin-top: 30px;
+}
+
+.resume-bullets:last-child{
+    padding: 0px 15px;
+}
+
+.resume-bullets:last-child::after{
+    display: none;
+}
+
+.resume-bullets h1{
+    font-size: 50px;
+}
+
+.resume-bullets h2{
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.resume-bullets h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.resume-bullets h4{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.resume-bullets p{
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.resume-bullets p:last-child{
+    padding-bottom: 0px;
+}
+
+.resume-bullets ul li{
+    margin-left: 50px;
+    list-style-type: circle;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*Footer*/
+footer{
+    height: 60px;
+    width: 100%;
+    background: rgba(54, 51, 51,1.0);
+    padding: 15px 15px;
+}
+footer ul{
+    font-size: 25px;
+    float: right;
+    margin-right: 15px;
+    text-align: right;
+    line-height: 40px;
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+footer ul li a{
+    color: #fff;
+    margin-right: 15px;
+}
+
+/*This media query will change webpage 
+item behavior when less than 950px width (tablet mode)*/
+@media (max-width: 950px){
+    nav a{
+        font-size: 25px;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+    .intro{
+        height: 200vh;
+    }
+    .info-box{
+        flex-direction: column;
+        height: 530px;
+        justify-content: center;
+    }
+    .info-box img{
+        align-self: center;
+        width: 250px;
+        height: 250px;
+    }
+    .info-text{
+        flex-grow: 1;
+    }
+}
+
+/*This media query will change webpage 
+item behavior when less than 850px width (phone mode)*/
+@media (max-width: 850px){
+    nav{
+        height: 100px;
+    }
+    nav img{
+        height: 70px;
+    }
+    nav a{
+        font-size: 25px;
+        line-height: 82px;
+    }
+    nav ul{
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        height: 100vh - 100px;
+        background:rgba(54, 51, 51,0.75);
+        top: 100px;
+        left: 200%;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        padding-right: 0px;
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+    .checkbtn{
+        line-height: 82px;
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    a.active{
+        color: #fff;
+    }
+    .info-box img{
+        flex-shrink: 2;
+    }
+    .info-text{
+        flex-shrink: 1;
+    }
+}
