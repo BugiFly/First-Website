@@ -244,7 +244,7 @@ item behavior when less than 1500px width (tablet mode)*/
     }
     .info-box{
         flex-direction: column;
-        max-height: 500px;
+        min-height: 500px;
         justify-content: center;
     }
     .info-box img{
