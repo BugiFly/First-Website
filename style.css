@@ -54,22 +54,7 @@ nav ul li a:hover{
 a.active{
     color: blueviolet;
 }
-/*
-this code adds a line below each link in the nav 
-bar that expands over a 0.5s period
-nav ul li::after{
-    content: "";
-    width: 0%;
-    height: 3px;
-    background: blueviolet;
-    display: block;
-    margin: 0px;
-    transform: translateY(-20px); 
-    transition: 0.5s;
-}
-nav ul li:hover::after{
-    width: 100%;
-}*/
+
 .checkbtn{
     font-size: 25px;
     color: #fff;
@@ -87,17 +72,24 @@ nav ul li:hover::after{
 
 /*This section dictates the intro and its contents*/
 .intro{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: rgba(54, 51, 51,0.5);
     padding: 50px 0px;
 }
+
+.intro-background{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 .info-box{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: space-between;
-    height: 230px;
+    min-height: 230px;
     width: 85%;
     margin-bottom: 50px;
     margin-left: 7.5%;
@@ -113,8 +105,6 @@ nav ul li:hover::after{
 }
 
 .info-text{
-    flex-grow: 1;
-    flex-shrink: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,13 +210,13 @@ nav ul li:hover::after{
 }
 
 /*Footer*/
-footer{
+.footer{
     height: 60px;
     width: 100%;
     background: rgba(54, 51, 51,1.0);
     padding: 15px 15px;
 }
-footer ul{
+.footer ul{
     font-size: 25px;
     float: right;
     margin-right: 15px;
@@ -234,11 +224,11 @@ footer ul{
     line-height: 40px;
 }
 
-footer ul li{
+.footer ul li{
     display: inline-block;
 }
 
-footer ul li a{
+.footer ul li a{
     color: #fff;
     margin-right: 15px;
 }
@@ -257,16 +247,19 @@ item behavior when less than 950px width (tablet mode)*/
     }
     .info-box{
         flex-direction: column;
-        height: 530px;
+        max-height: 500px;
         justify-content: center;
     }
     .info-box img{
         align-self: center;
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
-    .info-text{
-        flex-grow: 1;
+    .info-text h1{
+        font-size: 40px;
+    }
+    .info-text p{
+        font-size: 18px;
     }
 }
 
@@ -277,7 +270,7 @@ item behavior when less than 850px width (phone mode)*/
         height: 100px;
     }
     nav img{
-        height: 70px;
+        height: 50px;
     }
     nav a{
         font-size: 25px;
@@ -309,11 +302,5 @@ item behavior when less than 850px width (phone mode)*/
     }
     a.active{
         color: #fff;
-    }
-    .info-box img{
-        flex-shrink: 2;
-    }
-    .info-text{
-        flex-shrink: 1;
     }
 }
