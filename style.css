@@ -234,8 +234,8 @@ a.active{
 }
 
 /*This media query will change webpage 
-item behavior when less than 950px width (tablet mode)*/
-@media (max-width: 950px){
+item behavior when less than 1500px width (tablet mode)*/
+@media (max-width: 1500px){
     nav a{
         font-size: 25px;
     }
@@ -264,8 +264,8 @@ item behavior when less than 950px width (tablet mode)*/
 }
 
 /*This media query will change webpage 
-item behavior when less than 850px width (phone mode)*/
-@media (max-width: 850px){
+item behavior when less than 1200px width (phone mode)*/
+@media (max-width: 1200px){
     nav{
         height: 100px;
     }
