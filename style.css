@@ -235,15 +235,12 @@ a.active{
 
 /*This media query will change webpage 
 item behavior when less than 1500px width (tablet mode)*/
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1500px){
     nav a{
         font-size: 25px;
     }
     nav ul li a{
         font-size: 22px;
-    }
-    .intro{
-        height: 200vh;
     }
     .info-box{
         flex-direction: column;
@@ -252,8 +249,8 @@ item behavior when less than 1500px width (tablet mode)*/
     }
     .info-box img{
         align-self: center;
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     .info-text h1{
         font-size: 40px;
@@ -265,7 +262,7 @@ item behavior when less than 1500px width (tablet mode)*/
 
 /*This media query will change webpage 
 item behavior when less than 1200px width (phone mode)*/
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 1200px){
     nav{
         height: 100px;
     }
