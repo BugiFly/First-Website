@@ -235,7 +235,7 @@ a.active{
 
 /*This media query will change webpage 
 item behavior when less than 1500px width (tablet mode)*/
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 950px){
     nav a{
         font-size: 25px;
     }
@@ -265,7 +265,7 @@ item behavior when less than 1500px width (tablet mode)*/
 
 /*This media query will change webpage 
 item behavior when less than 1200px width (phone mode)*/
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 850px){
     nav{
         height: 100px;
     }
