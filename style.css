@@ -110,6 +110,7 @@ a.active{
     justify-content: center;
     align-items: center;
     padding: 15px 15px;
+    color: #fff;
 }
 .info-text h1{
     font-size: 50px;
@@ -121,11 +122,11 @@ a.active{
     padding-bottom: 10px;
 }
 .info-text a{
-    color: #fff;
+    color: rgb(179, 177, 177);
     font-size: 20px;
     font-weight: bold;
     padding: 5px 15px;
-    border: 5px solid #fff;
+    border: 5px solid rgb(179, 177, 177);
     border-radius: 25px;
     transition: 0.75s;
 }
@@ -151,6 +152,7 @@ a.active{
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 50px;
+    color: #fff;
 }
 
 .resume-bullets::after{
