@@ -89,6 +89,7 @@ a.active{
     flex-direction: row;
     justify-content: center;
     align-content: space-between;
+    align-items: center;
     min-height: 230px;
     width: 85%;
     margin-bottom: 50px;
@@ -101,7 +102,6 @@ a.active{
     border-radius: 25px;
     width: 200px;
     height: 200px;
-    flex-shrink: 2;
 }
 
 .info-text{
@@ -176,7 +176,6 @@ a.active{
 .resume-bullets a{
     color: white;
     font-size: 20px;
-    font-weight: bold;
     padding: 5px 15px;
     border: 5px solid rgb(179, 177, 177);
     border-radius: 25px;
@@ -212,7 +211,6 @@ a.active{
 .resume-bullets p{
     font-size: 18px;
     padding-bottom: 20px;
-    font-weight: bold;
     margin-left: 50px;
 }
 
@@ -224,7 +222,6 @@ a.active{
     margin-left: 50px;
     list-style-type: circle;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 .resume-bullets ul li:last-child{
     padding-bottom: 15px;
