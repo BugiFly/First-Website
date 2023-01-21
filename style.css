@@ -1,346 +1,56 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-body{
-    max-width: 1200px;
-    margin: auto;
+body {
+    margin-top: 40px; /* This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
     background-color: rgba(54, 51, 51,0.5);
-}
-
-/*This section dictates the header and its contents*/
-nav{
-    height: 150px;
-    width: 100%;
-    background: rgba(54, 51, 51,1.0);
-    padding: 15px 15px;
-}
-nav a{
-    color: #fff;
-    font-size: 30px;
-    line-height: 125px;
-    float: left;
-    margin-left: 15px;
-    text-align: left;
-}
-nav img{
-    height: 120px;
-    border: blueviolet solid 2px;
-    border-radius: 15%;
-}
-nav ul{
-    font-size: 25px;
-    line-height: 125px;
-    float: right;
-    margin-right: 15px;
-    text-align: right;
-}
-nav ul li{
-    display: inline-block;
-    padding-right: 25px;
-}
-nav ul li a{
-    color: #fff;
-    text-transform: uppercase;
-}
-nav ul li a:hover{
-    color: rgb(146, 145, 145);
-    transition: 0.5s;
-}
-a.active{
-    color: blueviolet;
-}
-
-.checkbtn{
-    font-size: 25px;
-    color: #fff;
-    line-height: 125px;
-    float: right;
-    margin-right: 15px;
-    text-align: right;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
-
-
-/*This section dictates the intro and its contents*/
-.intro{
-    min-height: 100vh;
-    width: 100%;
-    background: rgba(54, 51, 51,0.5);
-    padding: 50px 0px;
-}
-
-.intro-background{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.info-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: space-between;
-    align-items: center;
-    min-height: 230px;
-    width: 85%;
-    margin-bottom: 50px;
-    margin-left: 7.5%;
-    background: rgba(54, 51, 51,0.6);
-    padding: 15px 15px;
-    border-radius: 15px;
-}
-.info-box img{
-    border-radius: 25px;
-    width: 200px;
-    height: 200px;
-}
-
-.info-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 15px;
-    color: #fff;
-}
-.info-text h1{
-    font-size: 50px;
-    padding-bottom: 10px;
-}
-.info-text p{
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 10px;
-}
-.info-text a{
-    color: rgb(179, 177, 177);
-    font-size: 20px;
+  }
+  
+  body::before {
+    content: "XS";
+    color: red;
+    font-size: 2rem;
     font-weight: bold;
-    padding: 5px 15px;
-    border: 5px solid rgb(179, 177, 177);
-    border-radius: 25px;
-    transition: 0.75s;
-}
-.info-text a:hover{
-    color: rgba(54, 51, 51,0.75);
-    border-color: rgba(54, 51, 51,0.7);
-    background-color: #fff;
-}
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
 
-/*About Page Styling*/
-.resume{
-    min-height: 100vh;
-    width: 100%;
-    background: rgba(54, 51, 51,0.5);
-    padding: 50px 0px;
-}
-.resume-box{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-}
-.resume-bullets{
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    color: #fff;
-}
-
-.resume-bullets::after{
-    content: " ";
-    display: block;
-    position: relative;
-    height: 3px;
-    width: 100%;
-    background: black;
-    margin-top: 30px;
-}
-
-.resume-bullets:last-child{
-    padding: 0px 15px;
-}
-
-.resume-bullets:last-child::after{
-    display: none;
-}
-
-.resume-bullets a{
-    color: white;
-    font-size: 20px;
-    padding: 5px 15px;
-    border: 5px solid rgb(179, 177, 177);
-    border-radius: 25px;
-    transition: 0.75s;
-    margin-left: 100px;
-}
-.resume-bullets a:hover{
-    color: rgba(54, 51, 51,0.75);
-    border-color: rgba(54, 51, 51,0.7);
-    background-color: #fff;
-}
-
-.resume-bullets h1{
-    font-size: 50px;
-}
-
-.resume-bullets h2{
+  .nav-item{
     font-size: 25px;
-    padding-top: 20px;
-}
-
-.resume-bullets h3{
-    font-size: 20px;
-    padding-bottom: 10px;
-    padding-top: 20px;
-}
-
-.resume-bullets h4{
-    font-size: 15px;
-    padding-bottom: 10px;
-}
-
-.resume-bullets p{
-    font-size: 18px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-}
-
-.resume-bullets p:last-child{
-    padding-bottom: 0px;
-}
-
-.resume-bullets ul li{
-    margin-left: 50px;
-    list-style-type: circle;
-    margin-bottom: 10px;
-}
-.resume-bullets ul li:last-child{
-    padding-bottom: 15px;
-}
-
-/*Footer*/
-.footer{
-    height: 60px;
-    width: 100%;
-    background: rgba(54, 51, 51,1.0);
-    padding: 15px 15px;
-}
-.footer ul{
-    font-size: 25px;
-    float: right;
-    margin-right: 15px;
-    text-align: right;
-    line-height: 40px;
-}
-
-.footer ul li{
-    display: inline-block;
-}
-
-.footer ul li a{
-    color: #fff;
-    margin-right: 15px;
-}
-
-/*This media query will change webpage 
-item behavior when less than 1200px width (new phones)*/
-@media only screen and (max-width: 1200px){
-    nav{
-        height: 200px;
+  }
+  
+  /* This box class is purely used for explaining how the bootstrap grid system works. */
+  .box {
+    background-color: lightblue;
+    border: 1px solid blue;
+    min-height: 50px;
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 576px) {
+    body::before {
+      content: "SM";
     }
-    nav a{
-        font-size: 40px;
-        line-height: 160px;
+  }
+  
+  @media (min-width: 768px) {
+    body::before {
+      content: "MD";
     }
-    nav ul{
-        text-align: center;
-        position: fixed;
-        width: 100%;
-        height: 100vh - 200px;
-        background:rgba(54, 51, 51,0.75);
-        top: 200px;
-        left: 200%;
-        transition: 0.5s;
+  }
+  
+  @media (min-width: 992px) {
+    body::before {
+      content: "LG";
     }
-    nav ul li{
-        display: block;
-        padding-right: 0px;
+  }
+  
+  @media (min-width: 1200px) {
+    body::before {
+      content: "XL";
     }
-    .info-box{
-        flex-direction: column;
-        min-height: 50vh;
-        justify-content: center;
+  }
+  
+  @media (min-width: 1400px) {
+    body::before {
+      content: "XXL";
     }
-    .info-box img{
-        align-self: center;
-        width: 25vh;
-        height: 25vh;
-    }
-    .info-text h1{
-        font-size: 60px;
-    }
-    .info-text p{
-        font-size: 40px;
-    }
-    .info-text a{
-        font-size: 40px;
-    }
-    .checkbtn{
-        font-size: 40px;
-        line-height: 160px;
-        display: block;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-    a.active{
-        color: #fff;
-    }
-}
-
-/*This media query will change webpage 
-item behavior when less than 1200px width (older phones)*/
-@media only screen and (max-width: 850px){
-    nav{
-        height: 100px;
-    }
-    nav a{
-        font-size: 25px;
-        line-height: 82px;
-    }
-    nav ul{
-        text-align: center;
-        position: fixed;
-        width: 100%;
-        height: 100vh - 100px;
-        background:rgba(54, 51, 51,0.75);
-        top: 100px;
-        left: 200%;
-        transition: 0.5s;
-    }
-    nav ul li a{
-        font-size: 18px;
-    }
-    .checkbtn{
-        font-size: 25px;
-        line-height: 82px;
-    }
-    .info-text h1{
-        font-size: 25px;
-    }
-    .info-text p{
-        font-size: 18px;
-    }
-    .info-text a{
-        font-size: 18px;
-    }
-}
+  }
